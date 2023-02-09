@@ -2,7 +2,6 @@
 swagger/v1/swagger.json
 swagger-ui.html
 swagger-resources
-swagger/static/index.html
 swagger-ui/swagger.json
 swagger/ui/index
 apidocs/swagger.json
@@ -48,7 +47,6 @@ api
 api/v1/
 api/v2
 api/v3
-
 /swagger/v1/swagger.json
 /swagger-ui.html
 /swagger-resources
@@ -97,3 +95,4 @@ api/v3
 /api
 /api/v1/
 /api/v2
+swagger/static/index.html
