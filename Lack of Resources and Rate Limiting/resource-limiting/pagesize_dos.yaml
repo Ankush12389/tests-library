@@ -16,13 +16,9 @@ requests:
 
     payloads:
       size:
-        - 100
         - 1000
-        - 10000
-        - 100000
 
-    stop-at-first-match: true
-    matchers-condition: and
+  matchers-condition: and
     matchers:
       - type: status
         status:
