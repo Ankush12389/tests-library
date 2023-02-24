@@ -14,11 +14,6 @@ requests:
       - "{{BaseURL}}"
     body: "{{Body}}"
 
-    payloads:
-      size:
-        - 1000
-
-  matchers-condition: and
     matchers:
       - type: status
         status:
