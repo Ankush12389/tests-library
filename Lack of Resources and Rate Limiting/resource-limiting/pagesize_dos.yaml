@@ -1,4 +1,3 @@
-
 id: pagesize-dos
 
 info:
@@ -9,10 +8,10 @@ info:
   tags: rate-limiting
 
 requests:
-  - method: {{Method}}
-    path:
-      - "{{BaseURL}}"
-    body: "{{Body}}"
+  - raw:
+    - |
+      @timeout: 20s
+      {{Method}} {{BaseURL}} HTTP/1.1
 
     matchers:
       - type: status
