@@ -5,13 +5,13 @@ info:
   author: akto
   severity: medium
   description: Increasing the size parameter, causing performance issues on the database. Meanwhile, the API becomes unresponsive and is unable to handle further requests from this or any other clients (aka DoS).
-  tags: rate-limiting, app-dos
+  tags: rate-limiting, app-dos2
 
 requests:
   - raw:
     - |
       @timeout: 20s
-      {{Method}} {{BaseURL}}?{{QueryParams}} HTTP/1.1
+      {{Method}} {{BaseURLWithoutQueryParams}}?{{QueryParams}} HTTP/1.1
 
     matchers:
       - type: status
