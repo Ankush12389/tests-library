@@ -11,7 +11,7 @@ requests:
   - raw:
     - |
       @timeout: 20s
-      {{Method}} /?{{QueryParams}} HTTP/1.1
+      {{Method}} {{MyPath}}?{{QueryParams}} HTTP/1.1
 
     matchers:
       - type: status
